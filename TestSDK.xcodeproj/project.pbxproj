@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B871BD9F23A13B71000C338F /* TestSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B871BD9D23A13B71000C338F /* TestSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B871BDA623A13B81000C338F /* SomeRandomShit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B871BDA523A13B81000C338F /* SomeRandomShit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B871BD9A23A13B71000C338F /* TestSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B871BD9D23A13B71000C338F /* TestSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSDK.h; sourceTree = "<group>"; };
 		B871BD9E23A13B71000C338F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B871BDA523A13B81000C338F /* SomeRandomShit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeRandomShit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				B871BD9D23A13B71000C338F /* TestSDK.h */,
 				B871BD9E23A13B71000C338F /* Info.plist */,
+				B871BDA523A13B81000C338F /* SomeRandomShit.swift */,
 			);
 			path = TestSDK;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					B871BD9923A13B71000C338F = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B871BDA623A13B81000C338F /* SomeRandomShit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		B871BDA323A13B71000C338F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.TestSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		B871BDA423A13B71000C338F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
